@@ -1,5 +1,5 @@
 //
-//  RecordaudioViewController.swift
+//  RecordAudioViewController.swift
 //  Pitch Perfect
 //
 //  Created by Savas Konstadinidis on 3/10/15.
@@ -15,6 +15,7 @@ class RecordAudioViewController: UIViewController, AVAudioRecorderDelegate {
 @IBOutlet var recordAudio: UIButton!
 @IBOutlet var stopButton: UIButton!
 @IBOutlet var myLabel: UILabel!
+ 
  
 //Declared globally
 var audioRecorder: AVAudioRecorder!
@@ -101,7 +102,7 @@ playSoundsVC.receiveAudio = data
         
     }
 //Iniside func for stopbutton
-@IBAction func stopbutton(sender: UIButton) {
+@IBAction func stopButton(sender: UIButton) {
 
 var audioSession = AVAudioSession.sharedInstance()
   audioRecorder.stop()

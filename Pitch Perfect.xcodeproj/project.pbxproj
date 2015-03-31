@@ -14,7 +14,6 @@
 		A3DC9A441AAFCA6D001AF63D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DC9A421AAFCA6D001AF63D /* LaunchScreen.xib */; };
 		A3DC9A501AAFCA6D001AF63D /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC9A4F1AAFCA6D001AF63D /* Pitch_PerfectTests.swift */; };
 		A3F8BC7C1AB489C5002BD5C9 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F8BC7B1AB489C5002BD5C9 /* PlaySoundsViewController.swift */; };
-		A3F8BC821AB4A619002BD5C9 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A3F8BC811AB4A619002BD5C9 /* movie_quote.mp3 */; };
 		A3F8BC841ABB97F9002BD5C9 /* RecordClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F8BC831ABB97F9002BD5C9 /* RecordClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,6 @@
 		A3DC9A4E1AAFCA6D001AF63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3DC9A4F1AAFCA6D001AF63D /* Pitch_PerfectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectTests.swift; sourceTree = "<group>"; };
 		A3F8BC7B1AB489C5002BD5C9 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
-		A3F8BC811AB4A619002BD5C9 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = ../../../app_assets/movie_quote.mp3; sourceTree = "<group>"; };
 		A3F8BC831ABB97F9002BD5C9 /* RecordClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,7 +96,6 @@
 		A3DC9A371AAFCA6D001AF63D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A3F8BC811AB4A619002BD5C9 /* movie_quote.mp3 */,
 				A3DC9A381AAFCA6D001AF63D /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -204,7 +201,6 @@
 			files = (
 				A3DC9A3F1AAFCA6D001AF63D /* Main.storyboard in Resources */,
 				A3DC9A441AAFCA6D001AF63D /* LaunchScreen.xib in Resources */,
-				A3F8BC821AB4A619002BD5C9 /* movie_quote.mp3 in Resources */,
 				A3DC9A411AAFCA6D001AF63D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

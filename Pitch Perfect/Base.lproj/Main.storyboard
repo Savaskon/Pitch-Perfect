@@ -8,7 +8,7 @@
         <!--Record-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="recordaudioViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="RecordAudioViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -17,23 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vor-cR-WjJ">
-                                <rect key="frame" x="97" y="474" width="219" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMm-iv-WzM">
                                 <rect key="frame" x="181" y="342" width="50" height="50"/>
                                 <state key="normal" image="microphone">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="recbutton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="irP-hn-Vo0"/>
+                                    <action selector="recbutton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pyp-Ke-ltw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap to record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcp-Ad-hZb">
-                                <rect key="frame" x="155" y="416" width="104" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vor-cR-WjJ">
+                                <rect key="frame" x="97" y="474" width="219" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -48,30 +42,26 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="stopbutton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Wqh-z8-XsN"/>
+                                    <action selector="stopButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DLP-rg-vz6"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.24155339107813345" green="0.76407047685152496" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="vor-cR-WjJ" firstAttribute="top" secondItem="xcp-Ad-hZb" secondAttribute="bottom" constant="37" id="3xx-Jq-2nR"/>
                             <constraint firstItem="vor-cR-WjJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="82" id="HU5-vt-HJB"/>
-                            <constraint firstItem="xcp-Ad-hZb" firstAttribute="top" secondItem="OMm-iv-WzM" secondAttribute="bottom" constant="24" id="Ko4-nR-zD5"/>
                             <constraint firstAttribute="centerX" secondItem="OMm-iv-WzM" secondAttribute="centerX" id="Lyx-IA-r0E"/>
                             <constraint firstAttribute="centerX" secondItem="AO6-08-6ni" secondAttribute="centerX" id="Nhf-8c-euo"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="AO6-08-6ni" secondAttribute="bottom" constant="40" id="RGB-ds-lhB"/>
                             <constraint firstAttribute="centerY" secondItem="OMm-iv-WzM" secondAttribute="centerY" id="e9c-Fn-CWp"/>
-                            <constraint firstAttribute="centerX" secondItem="xcp-Ad-hZb" secondAttribute="centerX" id="gVC-27-7r3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vor-cR-WjJ" secondAttribute="trailing" constant="81" id="iGl-jM-Eh8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Record" id="IY3-js-08H"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="mylabel" destination="vor-cR-WjJ" id="z3l-h3-09S"/>
-                        <outlet property="recordaudio" destination="OMm-iv-WzM" id="4eV-HF-DII"/>
-                        <outlet property="stopbutton" destination="AO6-08-6ni" id="0Af-Pp-9vk"/>
-                        <outlet property="tap" destination="xcp-Ad-hZb" id="d9S-Fr-Q2A"/>
+                        <outlet property="myLabel" destination="vor-cR-WjJ" id="IFD-EU-97M"/>
+                        <outlet property="recordAudio" destination="OMm-iv-WzM" id="JBG-Ev-DyI"/>
+                        <outlet property="stopButton" destination="AO6-08-6ni" id="hMm-hL-Qgm"/>
                         <segue destination="PwJ-HD-eWC" kind="show" identifier="stoprecording" id="78y-nq-Tik"/>
                     </connections>
                 </viewController>
@@ -79,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="225" y="334"/>
         </scene>
-        <!--Playsounds View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="264-H0-5WL">
             <objects>
-                <viewController id="PwJ-HD-eWC" customClass="playsoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PwJ-HD-eWC" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="00S-Kb-yei"/>
                         <viewControllerLayoutGuide type="bottom" id="0aS-2t-UIJ"/>

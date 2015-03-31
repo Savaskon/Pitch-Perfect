@@ -1,5 +1,5 @@
 //
-//  playsoundsViewController.swift
+//  PlaySoundsViewController.swift
 //  Pitch Perfect
 //
 //  Created by Savas Konstadinidis on 3/14/15.
@@ -24,32 +24,29 @@ var audioFile: AVAudioFile!
 @IBAction func stopbutton(sender: UIButton) {
         
   audioPlayer.stop()
-  audioPlayer.currentTime = 0
+  audioPlayer.currentTime = 0.0
   audioEngine.stop()
     }
  
 //Inside func slowplay button
 @IBAction func slowplay(sender: UIButton) {
+  playAudio(0.5)
+  }
 
-  audioPlayer.enableRate = true
-  audioPlayer.rate = 0.5
-  audioPlayer.play()
-  audioEngine.stop()
-  audioEngine.reset()
-  audioPlayer.currentTime = 0.0
-    }
-  
 //Inside func fastplay button
 @IBAction func fastplay(sender: UIButton) {
-        
-  audioPlayer.enableRate = true
-  audioPlayer.rate = 2
-  audioPlayer.play()
-  audioEngine.stop()
-  audioEngine.reset()
-  audioPlayer.currentTime = 0.0
+       playAudio(2.0)
+
       }
-    
+  func playAudio(rate: Float) {
+    audioPlayer.enableRate = true
+    audioPlayer.play()
+    audioEngine.stop()
+    audioEngine.reset()
+    audioPlayer.currentTime = 0.0
+    audioPlayer.rate = rate
+  }
+  
 //Inside func chimpplay button
 @IBAction func chimplay(sender: UIButton) {
   

@@ -1,5 +1,5 @@
 //
-//  file.swift
+//  RecordedAudio.swift
 //  Pitch Perfect
 //
 //  Created by Savas Konstadinidis on 3/19/15.
